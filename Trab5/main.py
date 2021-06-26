@@ -3,7 +3,8 @@ import numpy as np
 
 #Função do cáculo da sigmóide
 def sigmoid(x):
-    return 1/(1+np.exp(-x))
+    result = (1+np.exp(-x)) # 1 + (e^ -x)
+    return 1/result         # 1 / (1 + (e^ -x))
 
 #Arquitetura da MPL
 N_input = 3
